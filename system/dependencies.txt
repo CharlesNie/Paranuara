@@ -1,0 +1,7 @@
+pip3.6 install python-dateutil
+
+pip3.6 install nltk
+	python3.6
+	>>> import nltk
+	>>> nltk.download('all')
+
