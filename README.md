@@ -22,3 +22,9 @@ When you finish the environment configuration, you could start follow thos steps
 - second, run: <b>python3.6 manage.py importdata company</b>  and   <b>python3.6 manage.py importdata people</b>  to import all data from json files to mysql database.
 - third, change path to system folder and then run: <b>python3.6 ../manage.py test system</b>   to test this application, otherwise, it will show errors that cannot find people.json and companies.json files, this problem could be solved.
 - last, you could setup web server and browe the webpage and input argument from webpage and see the results returned.
+
+after running above commands, let's talk about how to provide the given data. The given data format should be as below listed:
+- Given a company:  <b>{'company':'BOSTONIC'}</b>  and given multiple companies: <b>{'company':'BOSTONIC,ISOSWITCH,KEENGEN'}</b> (key point is: use commas to split values)
+- Given 2 people: <b>{'people':'Decker Mckenzie,Mindy Beasley'}</b>  or  given many people: <b>{'people':'Decker Mckenzie,Mindy Beasley,Carmella Lambert,Rosemary Hayes'}</b>. (key point is: use commas to split values)
+- Given 1 people: <b>{'people':'Grace Kelly'}</b>
+That's it. Hope you enjoy this!
